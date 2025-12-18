@@ -222,42 +222,50 @@ class SymbolicReasoner:
         resolvents = []
         
         # Try to resolve positive literals in clause1 with negative literals in clause2
-        for pos1 in clause1.positive:
-            for neg2 in clause2.negative:
+        for i, pos1 in enumerate(clause1.positive):
+            for j, neg2 in enumerate(clause2.negative):
                 subst = unify_predicates(pos1, neg2)
                 if subst is not None:
-                    # Create resolvent
-                    new_positive = tuple(
-                        subst.apply_predicate(p) 
-                        for p in clause1.positive + clause2.positive
-                        if p != pos1 or clause1 != clause2
-                    )
-                    new_negative = tuple(
-                        subst.apply_predicate(p)
-                        for p in clause1.negative + clause2.negative
-                        if p != neg2 or clause1 != clause2
-                    )
+                    # Create resolvent by removing the resolved literals
+                    new_positive = []
+                    for k, p in enumerate(clause1.positive):
+                        if k != i:  # Skip the resolved literal
+                            new_positive.append(subst.apply_predicate(p))
+                    for p in clause2.positive:
+                        new_positive.append(subst.apply_predicate(p))
+                    
+                    new_negative = []
+                    for p in clause1.negative:
+                        new_negative.append(subst.apply_predicate(p))
+                    for k, p in enumerate(clause2.negative):
+                        if k != j:  # Skip the resolved literal
+                            new_negative.append(subst.apply_predicate(p))
+                    
                     # Remove duplicates
                     new_positive = tuple(set(new_positive))
                     new_negative = tuple(set(new_negative))
                     resolvents.append(Clause(new_positive, new_negative))
         
         # Try to resolve negative literals in clause1 with positive literals in clause2
-        for neg1 in clause1.negative:
-            for pos2 in clause2.positive:
+        for i, neg1 in enumerate(clause1.negative):
+            for j, pos2 in enumerate(clause2.positive):
                 subst = unify_predicates(neg1, pos2)
                 if subst is not None:
-                    # Create resolvent
-                    new_positive = tuple(
-                        subst.apply_predicate(p)
-                        for p in clause1.positive + clause2.positive
-                        if p != pos2 or clause1 != clause2
-                    )
-                    new_negative = tuple(
-                        subst.apply_predicate(p)
-                        for p in clause1.negative + clause2.negative
-                        if p != neg1 or clause1 != clause2
-                    )
+                    # Create resolvent by removing the resolved literals
+                    new_positive = []
+                    for p in clause1.positive:
+                        new_positive.append(subst.apply_predicate(p))
+                    for k, p in enumerate(clause2.positive):
+                        if k != j:  # Skip the resolved literal
+                            new_positive.append(subst.apply_predicate(p))
+                    
+                    new_negative = []
+                    for k, p in enumerate(clause1.negative):
+                        if k != i:  # Skip the resolved literal
+                            new_negative.append(subst.apply_predicate(p))
+                    for p in clause2.negative:
+                        new_negative.append(subst.apply_predicate(p))
+                    
                     # Remove duplicates
                     new_positive = tuple(set(new_positive))
                     new_negative = tuple(set(new_negative))
