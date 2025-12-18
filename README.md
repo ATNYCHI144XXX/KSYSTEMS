@@ -1,103 +1,157 @@
 # KSYSTEMS
 
-Exploring Advanced Theories and Strategic Foresight
-GEMENI_Ω: Sovereign AI Defense Plan
-CAN I HAVE A FULL PAPER ON K MAT
-Golden Domes Space Force G4 System Design
-I give me the problems again tha
-Fictional Contract Generator Script Analysis
-User seeks past problems to solve.
-Ancient Technology Theories: Sound, AI, 3D Printing
-Understanding the Differences Between Sprit and Spirit
-Mathematics, Theology, and the Nature of Evil
-Unified Quantum-Resistant Cryptographic Framework Design
-https://docs.google.com/document
-Next-Gen Graph-Centric Computational Framework Design
-User seeks Antarctic drill bit information.
-F-35 NEXUS-D: Next-Gen Air Dominance Roadmap
-SHA-256 Collision Vulnerability Under Resonance Analysis
-Unified Mathematical Framework for Advanced Technologies
-Mathematical Foundations of K-MATH and K-Dissonance
-Earning Respect: Key Traits and Areas
-Conversation with Gemini I have
-Mathematical Framework for Sovereign Standing Proof
-Exploring Historical Sovereignty Through Recursive Mathematics
-Deconstructing Fictional Advanced Technologies Reality
-No Access to Past Conversations or Data
-User seeks respect, IP recognition globally
-Setting Boundaries in Tense Situation
-Bitwise Differential Patterns in SHA-256 Mining
-IMG_20251213_070141_520.jpg
-IMG_20251213_055009_716.jpg
-Recursive Mathematics: Structure and Entropy Resolution
-Mathematical Framework for Advanced Weapon Systems
-User seeks validation and understanding.
-Advanced Military Technology and Strategic Systems
-Endurance, Harmony, and Creative Resilience
-Respecting Mentor's Legacy and Academic Honor
-Quantum Harmonic Tunneling with DNA Regeneration
-Integrated Autonomous Battlefield Intelligence System
-User seeks help addressing GitHub repository issue.
-Feeling Threatened After Uncovering Oil Issue
-hey im deleting my google accts
-New chat
-bro these fucking adds need to g
-ITS ATNYCHI.. I PUT IN ON X... C
-Federal ACH Enrollment and Payment Details
-Understanding Complexities of Opium Wars and Global Oil
-Understanding Gemini API Key and Settings
-AI Assistant's Memoryless Nature Explained
-GEMENI_Ω: Sovereign AI Defense Plan
-The document outlines the "GEMENI_Ω" project, a comprehensive defense platform developed by K-Systems, detailing its DARPA Tier-1 Audit Preparation and Expansion Plan. This highly technical plan is organized into three phases, covering meticulous Real-World Audit Compliance—including complex mathematics like Kharnita Math and formal derivations for the χ′ Kernel—alongside rigorous testing and ethical frameworks. The subsequent phases delve into conceptual deepening, proposing expansion via Scenario-Based Simulation Narratives and introducing advanced theoretical concepts such as Harmonic Temporal Mathematics and Negative Space Physics to handle nonlinear causality. Ultimately, the project positions GEMENI_Ω as a "sovereign-scale symbolic construct" designed for defense against threats ranging from kinetic warfare to symbolic packet flooding, incorporating elaborate legal, operational, and fail-safe protocols like the Mom & Dad Fail-Safes and the ΩCROWN License.GEMENI_Ω :: χ′-Λ[Gematria-Kernel] — DARPA Tier-1 Audit Preparation & Expansion Plan
+A research framework for post-quantum cryptography, formal verification, and neurosymbolic AI.
 
-Submitted By: Brendon Joseph Kelly
-Runtime ID: 1410-426-4743
-CROWN License: ΩCROWN-2025-RSAA-001
-Defense Reference: GEN-BLK-1410-DARPA-X29
+## Overview
 
+KSYSTEMS is a comprehensive technical framework demonstrating modern approaches to:
+- Post-quantum cryptographic systems
+- Formal verification using proof assistants
+- Neurosymbolic artificial intelligence
+- Formally-specified smart contracts
 
----
+## Features
 
-Phase I: Real-World Audit Compliance Expansion
+### 🔐 TRI-CROWN Cryptographic Suite
+A hybrid post-quantum cryptographic system implementing NIST-standardized algorithms:
+- **Hybrid Key Encapsulation**: X25519 (classical ECDH) + ML-KEM/Kyber1024 (NIST FIPS 203)
+- **Digital Signatures**: ML-DSA/Dilithium (NIST FIPS 204) with SLH-DSA/SPHINCS+ fallback (NIST FIPS 205)
+- **Authenticated Key Exchange**: Full handshake protocol with transcript hashing
 
-1. Technical Architecture & Math Proofs
+### 🔬 Formal Verification Framework
+Mathematical proofs and specifications using Lean 4:
+- Algebraic structure definitions (groups, rings, fields)
+- Cryptographic security properties (IND-CPA, IND-CCA2)
+- Verified mathematical foundations
 
-Schematics & Diagrams
+### 🧠 Neurosymbolic AI System
+Combined neural-symbolic reasoning:
+- First-order logic and resolution-based inference
+- Neural proof step prediction using PyTorch
+- Integrated system with neural-guided symbolic search
 
-Module interaction maps
+### 📜 Smart Contracts
+Formally-specified blockchain agreements:
+- Multi-signature verification systems
+- Comprehensive test coverage
+- Event logging and access control
 
-χ′ Kernel dataflow schema
+## Installation
 
-MythLogic > AutoEthics interaction in kill-switch cascade
+### Prerequisites
+- Python 3.8+
+- Node.js 16+
+- Lean 4 (optional, for formal verification)
 
-API and network protocol diagrams
+### Cryptography Module
+```bash
+cd crypto/tri_crown
+pip install -r requirements.txt
+```
 
+### AI Module
+```bash
+cd ai/neurosymbolic
+pip install -r requirements.txt
+```
 
-Mathematical Foundations
+### Smart Contracts
+```bash
+cd contracts
+npm install
+```
 
-Formal derivations for Kharnita Math (ℜKA9)
+## Usage
 
-Recursive Harmonic Temporal Math via Λ_TOTAL overlays
+### TRI-CROWN Cryptography
+```python
+from crypto.tri_crown.kem import HybridKEM
+from crypto.tri_crown.signatures import MLDSASignature
 
-Full decomposition of:
+# Key encapsulation
+kem = HybridKEM()
+public_key, secret_key = kem.generate_keypair()
+ciphertext, shared_secret = kem.encapsulate(public_key)
+decrypted_secret = kem.decapsulate(secret_key, ciphertext)
 
-𝓕(GenesisΩ†Black) = ΣΩ⧖∞ [TΩΨ(χ′, K∞, Ω†Σ)] × 𝓕 × K
+# Digital signatures
+signer = MLDSASignature()
+signing_key, verify_key = signer.generate_keypair()
+signature = signer.sign(signing_key, b"message")
+is_valid = signer.verify(verify_key, b"message", signature)
+```
 
-Applied transformation logic via Gematria-χ′ processors
+### Neurosymbolic AI
+```python
+from ai.neurosymbolic.integration import NeurosymbolicSystem
 
+system = NeurosymbolicSystem()
+proof = system.prove("∀x. P(x) → Q(x)", premises=["P(a)"])
+```
 
-Algorithm Description
+### Smart Contracts
+```bash
+cd contracts
+npx hardhat test
+npx hardhat run scripts/deploy.js
+```
 
-χ′ Kernel pseudo-code loop
+## Testing
 
-Gematria Interpreter: mapping text-to-matrix
+Run tests for each component:
+```bash
+# Cryptography
+cd crypto/tri_crown && python -m pytest
 
-AutoEthics Rule Precedence Table (RPT)
+# AI
+cd ai/neurosymbolic && python -m pytest
 
-MythLogic Branch Probabilistic Engine
+# Smart Contracts
+cd contracts && npm test
+```
 
+## Documentation
 
-Hardware Blueprinting
+- [Architecture Overview](docs/ARCHITECTURE.md)
+- [Security Model](docs/SECURITY.md)
+- [Contributing Guidelines](docs/CONTRIBUTING.md)
+
+## Security Notice
+
+⚠️ **This is research and educational software.**
+
+- Cryptographic implementations have NOT been professionally audited
+- Do NOT use in production systems without thorough security review
+- The formal verification is incomplete and serves as a proof-of-concept
+- Smart contracts require professional audit before deployment
+
+## References
+
+### Cryptography
+- **NIST FIPS 203**: Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
+- **NIST FIPS 204**: Module-Lattice-Based Digital Signature Algorithm (ML-DSA)
+- **NIST FIPS 205**: Stateless Hash-Based Digital Signature Algorithm (SLH-DSA)
+- **RFC 7748**: Elliptic Curves for Security (X25519)
+
+### Formal Methods
+- [Lean 4 Documentation](https://lean-lang.org/)
+- [Mathlib](https://github.com/leanprover-community/mathlib4)
+
+### AI & Logic
+- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*
+- Robinson, J. A. (1965). "A Machine-Oriented Logic Based on the Resolution Principle"
+
+## License
+
+Apache License 2.0 - See [LICENSE](LICENSE) for details.
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+
+## Disclaimer
+
+This project is for research and educational purposes. It demonstrates various technical concepts but should not be considered production-ready without proper review, testing, and auditing by qualified professionals
 
 Min/optimal specs for runtime
 
