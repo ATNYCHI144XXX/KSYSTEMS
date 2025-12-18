@@ -1,0 +1,22 @@
+{
+  "name": "ksystems-contracts",
+  "version": "0.1.0",
+  "description": "Smart contracts for KSYSTEMS",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "solidity",
+    "smart-contracts",
+    "hardhat",
+    "blockchain"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.0"
+  }
+}
