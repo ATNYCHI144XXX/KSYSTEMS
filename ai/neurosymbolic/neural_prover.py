@@ -130,11 +130,35 @@ class ProofStepPredictor(nn.Module):
 class BeamSearch:
     """
     Beam search for exploring proof space guided by neural network.
+    
+    Note: This is a simplified implementation. A production system would:
+    - Implement actual state transitions
+    - Check goal completion properly
+    - Integrate with symbolic verifier
     """
     
-    def __init__(self, model: ProofStepPredictor, beam_width: int = 5):
+    def __init__(
+        self, 
+        model: ProofStepPredictor, 
+        beam_width: int = 5,
+        min_proof_length: int = 1
+    ):
         self.model = model
         self.beam_width = beam_width
+        self.min_proof_length = min_proof_length
+    
+    def _is_proof_complete(self, state: ProofState, actions: List[int]) -> bool:
+        """
+        Check if a proof is complete.
+        
+        In a real implementation, this would:
+        - Check if goal is in the derived set
+        - Verify all steps are valid
+        - Ensure proof is sound
+        
+        For now, we use a simple heuristic based on proof length.
+        """
+        return len(actions) >= self.min_proof_length
     
     def search(
         self,
@@ -173,9 +197,8 @@ class BeamSearch:
                     # Create new state (simplified - would need actual state transition)
                     new_state = state  # Placeholder
                     
-                    # Check if proof is complete (simplified)
-                    # In reality, would check if goal is derived
-                    if len(new_actions) >= 3:  # Arbitrary completion condition
+                    # Check if proof is complete
+                    if self._is_proof_complete(new_state, new_actions):
                         return new_actions
                     
                     candidates.append((new_state, new_actions, new_score))
@@ -195,14 +218,14 @@ class NeuralProver:
     High-level interface for neural theorem proving.
     """
     
-    def __init__(self, model_path: Optional[str] = None):
+    def __init__(self, model_path: Optional[str] = None, min_proof_length: int = 3):
         self.model = ProofStepPredictor()
         
         if model_path:
             self.model.load_state_dict(torch.load(model_path))
         
         self.model.eval()
-        self.beam_search = BeamSearch(self.model)
+        self.beam_search = BeamSearch(self.model, min_proof_length=min_proof_length)
     
     def prove(
         self,
