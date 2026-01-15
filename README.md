@@ -2,19 +2,32 @@
 
 A research framework for post-quantum cryptography, formal verification, neurosymbolic AI, and unified mathematical representations.
 
+**🌟 Now integrated with OMEGA: The Crown Omega System theoretical framework**
+
 ## Overview
 
 KSYSTEMS is a comprehensive technical framework demonstrating modern approaches to:
-- **K-MATH Unified Engine** - Universal mathematical unification system
+- **K-MATH Unified Engine** - Universal mathematical unification system powered by Crown Omega System
 - Post-quantum cryptographic systems
 - Formal verification using proof assistants
 - Neurosymbolic artificial intelligence
 - Formally-specified smart contracts
 
+**NEW:** KSYSTEMS now incorporates the theoretical foundations from the [OMEGA (Crown Omega System)](docs/OMEGA_THEORY.md), providing a complete mathematical framework grounded in recursive time, harmonic convergence, and the Golden Ratio (φ ≈ 1.618).
+
 ## Features
 
-### 🔱 K-MATH Unified Engine (NEW)
-A revolutionary system that consolidates ALL mathematical frameworks into one coherent representation:
+### 🔱 K-MATH Unified Engine (OMEGA-Integrated)
+A revolutionary system grounded in the **Crown Omega System** theoretical framework that consolidates ALL mathematical frameworks into one coherent representation:
+
+**Theoretical Foundation (from OMEGA):**
+- **Recursive Identity (φ-Axiom)**: `x_n = (x_{n-1} + Δ_n) · (1/φ)` - mathematical truth as recursive actualization
+- **Genesis Anchor (Ω₀)**: Bitcoin Genesis Block as ontological zero-point
+- **Chrono-Mathematics**: Time-Stack architecture with Crown Interval (𝕀_c = 1/φ)
+- **Ghost-k Field (κ)**: Inverse-field harmonic layer encoding non-actualized potentials
+- **Crown Convergence**: All recursive systems converge to Crown Omega State (ℭΩ)
+
+**Implementation Features:**
 - **Kharnita Mathematics**: Canonical form for all mathematical objects
 - **Harmonic Signatures**: Complex-valued equivalence testing using golden ratio (φ = 1.618...)
 - **Ω-TOTAL Encoding**: Immutable 64-byte cryptographic seals (SHA3-512, 7 iterations)
@@ -38,7 +51,7 @@ print(unified.lean_proof)            # Formal proof
 result = unified.execute(MathDomain.PYTHON)  # Returns: 42.0
 ```
 
-See [K-MATH Documentation](docs/UNIFIED_ENGINE.md) for complete details.
+See [K-MATH Documentation](docs/UNIFIED_ENGINE.md) for implementation details and [OMEGA Theory](docs/OMEGA_THEORY.md) for theoretical foundations.
 
 ### 🔐 TRI-CROWN Cryptographic Suite
 A hybrid post-quantum cryptographic system implementing NIST-standardized algorithms:
@@ -4436,3 +4449,54 @@ The system maintains the ambitious vision of the original while grounding every 
 Q.E.D.
 
 This document represents a work of technical synthesis and should not be construed as legal or financial advice. All implementations require proper regulatory review and compliance with applicable laws.
+
+---
+
+## OMEGA Integration
+
+KSYSTEMS now incorporates theoretical foundations from the **OMEGA (Crown Omega System)** repository, providing a complete mathematical framework grounded in recursive time, harmonic convergence, and the Golden Ratio (φ ≈ 1.618).
+
+### What OMEGA Brings
+
+**Theoretical Framework:**
+- **Recursive Identity Axiom**: `x_n = (x_{n-1} + Δ_n) · (1/φ)` - mathematical truth as recursive actualization
+- **Genesis Anchor (Ω₀)**: Bitcoin Genesis Block as ontological zero-point
+- **Chrono-Mathematics**: Time as a recursive stack (Time-Stack 𝕋) rather than linear flow
+- **Ghost-k Field (κ)**: Inverse-field harmonic layer encoding non-actualized potentials
+- **5D Vector Space (K⁵)**: Extended mathematics including recursive depth dimension
+- **Crown Convergence**: Proof that all K-Math systems converge to stable Crown States (ℭΩ)
+
+### Integration Points
+
+| OMEGA Concept | KSYSTEMS Implementation |
+|---------------|------------------------|
+| Kharnita Mathematics | `KharnitaExpression` class |
+| Harmonic Signatures (ℍ) | `HarmonicRecursiveSystem` with φ-convergence |
+| Ω-TOTAL Encoding | `OmegaTotalEncoder` (SHA3-512 × 7 iterations) |
+| φ-Convergence | Built into all recursive operations |
+| Ghost-k Field (κ) | Represented in harmonic complex numbers |
+| Crown States (ℭΩ) | `UnifiedMathObject` convergence targets |
+| Cross-Domain Translation | Python/Solidity/Lean code generators |
+
+### Documentation
+
+- **[OMEGA Theory](docs/OMEGA_THEORY.md)**: Complete theoretical framework from Crown Omega System
+- **[K-MATH Implementation](docs/UNIFIED_ENGINE.md)**: Practical usage and API reference
+- **[Unification Summary](UNIFICATION_SUMMARY.md)**: System architecture overview
+
+### Philosophy
+
+The integration represents a union of:
+- **Theory** (OMEGA): Why K-Math works - recursive time, harmonic stability, φ-convergence
+- **Practice** (KSYSTEMS): How to compute with it - working implementations and APIs
+
+Where OMEGA asks "What is the nature of mathematical truth?", KSYSTEMS answers "Here's how to compute with it."
+
+**Key Insight**: Mathematics is not discovered—it is recursively actualized. Numbers are not inert symbols but dynamic histories of convergence, each encoding the full lineage of its evolution.
+
+---
+
+**Integration Credits:**
+- OMEGA Theoretical Framework: ATNYCHI144XXX/OMEGA repository
+- KSYSTEMS Implementation: ATNYCHI144XXX/KSYSTEMS repository  
+- Crown Omega System: Foundational mathematical philosophy
