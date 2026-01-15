@@ -1,16 +1,44 @@
 # KSYSTEMS
 
-A research framework for post-quantum cryptography, formal verification, and neurosymbolic AI.
+A research framework for post-quantum cryptography, formal verification, neurosymbolic AI, and unified mathematical representations.
 
 ## Overview
 
 KSYSTEMS is a comprehensive technical framework demonstrating modern approaches to:
+- **K-MATH Unified Engine** - Universal mathematical unification system
 - Post-quantum cryptographic systems
 - Formal verification using proof assistants
 - Neurosymbolic artificial intelligence
 - Formally-specified smart contracts
 
 ## Features
+
+### 🔱 K-MATH Unified Engine (NEW)
+A revolutionary system that consolidates ALL mathematical frameworks into one coherent representation:
+- **Kharnita Mathematics**: Canonical form for all mathematical objects
+- **Harmonic Signatures**: Complex-valued equivalence testing using golden ratio (φ = 1.618...)
+- **Ω-TOTAL Encoding**: Immutable 64-byte cryptographic seals (SHA3-512, 7 iterations)
+- **Cross-Domain Translation**: Automatic generation of Python, Solidity, and Lean code
+- **Universal Integration**: Unifies crypto, AI, and blockchain systems
+
+```python
+from core.unification import unify, MathDomain
+
+# Unify any mathematical object
+unified = unify(42, name="answer")
+
+# Access all representations
+print(unified.harmonic_signature)    # Complex number: 6.0857+0.0000j
+print(unified.omega_encoding.hex())  # 64-byte hash
+print(unified.python_code)           # Executable function
+print(unified.solidity_contract)     # Smart contract
+print(unified.lean_proof)            # Formal proof
+
+# Execute in any domain
+result = unified.execute(MathDomain.PYTHON)  # Returns: 42.0
+```
+
+See [K-MATH Documentation](docs/UNIFIED_ENGINE.md) for complete details.
 
 ### 🔐 TRI-CROWN Cryptographic Suite
 A hybrid post-quantum cryptographic system implementing NIST-standardized algorithms:
@@ -43,6 +71,11 @@ Formally-specified blockchain agreements:
 - Node.js 16+
 - Lean 4 (optional, for formal verification)
 
+### K-MATH Unified Engine
+```bash
+pip install numpy pytest
+```
+
 ### Cryptography Module
 ```bash
 cd crypto/tri_crown
@@ -62,6 +95,37 @@ npm install
 ```
 
 ## Usage
+
+### K-MATH Unified Engine
+```python
+from core.unification import unify, MathDomain, k_omega, k_psi
+
+# Basic unification
+obj = unify({"data": 123, "name": "test"}, name="my_object")
+
+# Access representations
+print(f"Harmonic: {obj.harmonic_signature}")
+print(f"Ω-TOTAL: {obj.omega_encoding[:16].hex()}...")
+print(obj.python_code)         # Python function
+print(obj.solidity_contract)   # Smart contract
+print(obj.lean_proof)          # Lean proof
+
+# Apply K-Math operators
+from core.unification import KharnitaCanonicalizer
+canonicalizer = KharnitaCanonicalizer()
+expr = canonicalizer.canonicalize(100, name="base")
+omega_expr = k_omega(expr)  # Apply golden ratio
+psi_expr = k_psi(expr)      # Apply quantum phase
+
+# Execute in domains
+result = obj.execute(MathDomain.PYTHON)
+crypto_ready = obj.execute(MathDomain.POST_QUANTUM_CRYPTO)
+```
+
+Run the demo:
+```bash
+PYTHONPATH=$PWD python examples/unification_demo.py
+```
 
 ### TRI-CROWN Cryptography
 ```python
@@ -100,6 +164,9 @@ npx hardhat run scripts/deploy.js
 
 Run tests for each component:
 ```bash
+# K-MATH Unified Engine (34 tests)
+python -m pytest tests/test_unification.py -v
+
 # Cryptography
 cd crypto/tri_crown && python -m pytest
 
@@ -112,6 +179,7 @@ cd contracts && npm test
 
 ## Documentation
 
+- [K-MATH Unified Engine](docs/UNIFIED_ENGINE.md) - Complete unification system guide
 - [Architecture Overview](docs/ARCHITECTURE.md)
 - [Security Model](docs/SECURITY.md)
 - [Contributing Guidelines](docs/CONTRIBUTING.md)
