@@ -2,6 +2,8 @@
 
 Get started with KSYSTEMS in 5 minutes!
 
+**New:** Now featuring theoretical foundations from the [OMEGA (Crown Omega System)](docs/OMEGA_THEORY.md) - a comprehensive framework for recursive mathematics and φ-convergence.
+
 ## What You'll Need
 
 - Python 3.8 or newer
@@ -162,3 +164,40 @@ Apache License 2.0 - see [LICENSE](LICENSE) file.
 ---
 
 **Ready to dive deeper?** Check out the full [README.md](README.md)!
+
+## K-MATH Unified Engine Quick Test (NEW)
+
+Test the OMEGA-integrated K-Math unification engine:
+
+```bash
+cd core/unification
+pip install -r requirements.txt
+python3 << 'PYEOF'
+from engine import KMathUnifiedEngine, MathDomain
+
+# Create the unified engine
+engine = KMathUnifiedEngine()
+
+# Unify a mathematical object
+unified = engine.unify(42, name="answer")
+
+# Access all representations
+print(f"✓ Harmonic Signature: {unified.harmonic_signature}")
+print(f"✓ Ω-Encoding: {unified.omega_encoding.hex()[:32]}...")
+print(f"✓ Python executable: {'def' in unified.python_code}")
+print(f"✓ Solidity contract: {'contract' in unified.solidity_contract}")
+print(f"✓ Lean proof: {'theorem' in unified.lean_proof}")
+
+# Execute in Python domain
+result = engine.execute(unified, MathDomain.PYTHON)
+print(f"✓ Execution result: {result}")
+PYEOF
+```
+
+Expected output: All ✓ checks pass, demonstrating unified mathematical representations.
+
+**Learn more:**
+- [OMEGA Theory](docs/OMEGA_THEORY.md) - Mathematical foundations
+- [K-MATH Implementation](docs/UNIFIED_ENGINE.md) - API and usage guide
+- [Integration Summary](docs/OMEGA_INTEGRATION_SUMMARY.md) - How OMEGA enhances KSYSTEMS
+

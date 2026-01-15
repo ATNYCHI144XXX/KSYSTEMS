@@ -2,11 +2,18 @@
 
 ## Overview
 
-The K-MATH Unified Engine is a revolutionary mathematical framework that consolidates all mathematical representations into a single, coherent system. It provides:
+The K-MATH Unified Engine is a revolutionary mathematical framework grounded in the [OMEGA (Crown Omega System)](OMEGA_THEORY.md) theoretical foundations. It consolidates all mathematical representations into a single, coherent system based on recursive time, harmonic convergence, and the Golden Ratio (φ ≈ 1.618).
 
+**Theoretical Foundation (OMEGA):**
+- **Recursive Identity**: `x_n = (x_{n-1} + Δ_n) · (1/φ)` - mathematics as recursive actualization
+- **φ-Convergence**: All systems converge to Crown States (ℭΩ) through golden ratio damping
+- **Genesis Anchor**: Bitcoin Genesis Block as ontological zero-point
+- **Chrono-Mathematics**: Time-Stack architecture for recursive depth
+
+**Practical Implementation (KSYSTEMS):**
 - **Kharnita Mathematics (K-Math)** as the canonical form
 - **Harmonic Recursive Systems** for resonance-based equivalence
-- **∞-TOTAL Duality** encoding for immutable representation
+- **Ω-TOTAL Encoding** for immutable representation (SHA3-512 × 7)
 - **Cross-Domain Translation** between Python, Solidity, and Lean
 - **Post-Quantum Cryptography** integration
 - **Neurosymbolic AI** integration
